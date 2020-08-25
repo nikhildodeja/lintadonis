@@ -16,7 +16,9 @@ const providers = [
   '@adonisjs/cors/providers/CorsProvider',
   '@adonisjs/shield/providers/ShieldProvider',
   '@adonisjs/session/providers/SessionProvider',
-  '@adonisjs/auth/providers/AuthProvider'
+  '@adonisjs/auth/providers/AuthProvider',
+  '@adonisjs/redis/providers/RedisProvider',
+  '@rocketseat/adonis-bull/providers/Bull'
 ];
 
 /*
@@ -29,7 +31,8 @@ const providers = [
 |
 */
 const aceProviders = [
-  '@adonisjs/lucid/providers/MigrationsProvider'
+  '@adonisjs/lucid/providers/MigrationsProvider',
+  '@rocketseat/adonis-bull/providers/Command'
 ];
 
 /*

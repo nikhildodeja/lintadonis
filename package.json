@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "node ace test",    
-    "pretest": "./node_modules/.bin/eslint --ignore-path .gitignore ."
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore ."
   },
   "keywords": [
     "adonisjs",
@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pretest"
+      "pre-commit": "npm run lint"
     }
   },
   "autoload": {

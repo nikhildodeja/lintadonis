@@ -12,6 +12,8 @@ const Server = use('Server');
 */
 const globalMiddleware = [
   'Adonis/Middleware/BodyParser',
+  'XYZ/middleware/Request-Bind',
+  'XYZ/Middleware/Anything',
   'Adonis/Middleware/Session',
   'Adonis/Middleware/Shield',
   'Adonis/Middleware/AuthInit',

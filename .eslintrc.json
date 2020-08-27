@@ -32,13 +32,7 @@
               "ignoreUrls" : true
             }
         ],
-        "brace-style" : [
-            2,
-            "1tbs",
-            {
-              "allowSingleLine" : true
-            }
-        ]
+        "indent" : ["error", 2]
       
     }
 }

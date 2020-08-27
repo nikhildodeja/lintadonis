@@ -1,7 +1,6 @@
 /** @type {typeof import('lucid-mongo/src/LucidMongo/Model')} */
 const Model = use('Model');
 
-class Token extends Model {
+class Company extends Model {
 }
-
-module.exports = Token;
+module.exports = Company;

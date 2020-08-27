@@ -29,7 +29,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get(envs.connection, 'sqlite'),
+  connection: envs.connection || 'sqlite',
 
   /*
   |--------------------------------------------------------------------------
@@ -95,11 +95,11 @@ module.exports = {
     client: 'mongodb',
     connectionString: Env.get('DB_CONNECTION_STRING', ''),
     connection: {
-      host: envs.host || 'localhost',
+      host: envs.host || '127.0.0.1',
       port: envs.port || 27017,
       // username: Env.get('DB_USER', 'admin'),
       // password: Env.get('DB_PASSWORD', ''),
-      database: envs.database || 'xyz',
+      database: envs.database || 'xyz-core',
       options: {
         useUnifiedTopology: true,
         useNewUrlParser: true

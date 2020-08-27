@@ -11,14 +11,17 @@
 const providers = [
   '@adonisjs/framework/providers/AppProvider',
   '@adonisjs/framework/providers/ViewProvider',
-  '@adonisjs/lucid/providers/LucidProvider',
+  // '@adonisjs/lucid/providers/LucidProvider',
   '@adonisjs/bodyparser/providers/BodyParserProvider',
   '@adonisjs/cors/providers/CorsProvider',
   '@adonisjs/shield/providers/ShieldProvider',
   '@adonisjs/session/providers/SessionProvider',
   '@adonisjs/auth/providers/AuthProvider',
+  'lucid-mongo/providers/LucidMongoProvider',
   '@adonisjs/redis/providers/RedisProvider',
-  '@rocketseat/adonis-bull/providers/Bull'
+  '@rocketseat/adonis-bull/providers/Bull',
+  'xyz-util/providers/AnyThingProvider',
+  'xyz-util/providers/UtilityProvider'
 ];
 
 /*
@@ -31,7 +34,8 @@ const providers = [
 |
 */
 const aceProviders = [
-  '@adonisjs/lucid/providers/MigrationsProvider',
+  'lucid-mongo/providers/MigrationsProvider',
+  // '@adonisjs/lucid/providers/MigrationsProvider',
   '@rocketseat/adonis-bull/providers/Command'
 ];
 

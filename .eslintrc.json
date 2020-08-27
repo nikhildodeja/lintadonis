@@ -32,7 +32,6 @@
               "ignoreUrls" : true
             }
         ],
-        "indent" : ["error", 2]
-      
+        "indent": [2, 4]
     }
 }

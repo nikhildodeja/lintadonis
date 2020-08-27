@@ -1,5 +1,5 @@
 module.exports = {
-  aliase: 'aliases',
-  exception: 'exceptions',
-  company: 'companies'
+    aliase: 'aliases',
+    exception: 'exceptions',
+    company: 'companies'
 };

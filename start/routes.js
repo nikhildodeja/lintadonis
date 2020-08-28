@@ -14,6 +14,8 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.get('/test', 'EntryController.test');
+Route.post('/test', 'EntryController.test');
+
+Route.post('/login', 'EntryController.login');
 
 Route.on('/').render('welcome');

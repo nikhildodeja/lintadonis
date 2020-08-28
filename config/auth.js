@@ -69,6 +69,7 @@ module.exports = {
         scheme: 'jwt',
         uid: 'email',
         password: 'password',
+        companyId: 'companyId',
         options: {
             secret: Env.get('APP_KEY')
         }
@@ -87,6 +88,7 @@ module.exports = {
         model: 'App/Models/User',
         scheme: 'api',
         uid: 'email',
-        password: 'password'
+        password: 'password',
+        companyId: 'companyId'
     }
 };
